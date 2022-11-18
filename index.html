@@ -10,14 +10,13 @@
   <input type="button" value="くじを引く" onclick="clickBtn1()" width="200%" height="200%"/>
   </div>
   <div id="view" style="display: none;" align="center">
-    <p align="center" width="200%" height="200%"><font size="6" color="#000000">本日のsuzu_riaの筋トレ回数は<br><span id="kuzi"></span> 回だよ！頑張れ〜！</font></p>
+    <p align="center" width="200%" height="200%"><font size="6" color="#000000">本日の貴方の筋トレ回数は<br><span id="kuzi"></span> 回だよ！頑張れ〜！</font></p>
       </div>
       
   <script>
     function clickBtn1() {
        var result = Math.floor( Math.random() * 998 ) + 1;
        document.getElementById("kuzi").innerHTML = result;
-         //切り替える対象の状態を取得
     var div = document.getElementById('view');
     state=div.style.display;
     if(state=="none"){
